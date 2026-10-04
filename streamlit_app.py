@@ -1,4 +1,16 @@
+import streamlit as st
 
+# ضبط عنوان التبويب وإيموجي أو رابط الأيقونة
+st.set_page_config(
+    page_title="نظام إدارة مخزون قطع الغيار",
+    page_icon="🔧",
+    layout="wide"
+)
+
+st.markdown("<h1 style='text-align: center;'>نظام إدارة مخزون قطع الغيار</h1>", unsafe_allow_html=True)
+st.markdown("---")
+
+# باقي كود البرنامج بدون أمر st.image
 import streamlit as st
 import sqlite3
 import pandas as pd
