@@ -1,22 +1,4 @@
-import streamlit as st
 
-# 1. ضبط اسم التبويب والأيقونة
-st.set_page_config(
-    page_title="نظام إدارة مخزون قطع الغيار",
-    page_icon="🔧",
-    layout="wide"
-)
-
-# 2. عرض اللوجو في منتصف الشاشة
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-    try:
-        st.image("IMG_3139.png", use_container_width=True)
-    except Exception:
-        pass
-
-st.markdown("<h1 style='text-align: center;'>نظام إدارة مخزون قطع الغيار</h1>", unsafe_allow_html=True)
-st.markdown("---")
 import streamlit as st
 import sqlite3
 import pandas as pd
